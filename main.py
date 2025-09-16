@@ -97,7 +97,7 @@ def train_model():
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
     criterion = nn.BCELoss()
 
-    for epoch in range(1):
+    for epoch in range(10):
         print(f"\nEpoch {epoch+1}/10")
         model.train()
         total_loss = 0
