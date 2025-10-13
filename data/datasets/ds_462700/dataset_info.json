@@ -1,0 +1,26 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "audio": {
+      "feature": {
+        "dtype": "float32",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "label": {
+      "names": [
+        "other",
+        "drone"
+      ],
+      "_type": "ClassLabel"
+    },
+    "sampling_rate": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}
