@@ -1,2 +1,2 @@
-data/
 *.pyc
+/data/datasets/ds_462700/cache*
