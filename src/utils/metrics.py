@@ -10,7 +10,7 @@ import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
-from ..config import DEVICE
+from ..settings import DEVICE
 
 
 def calculate_accuracy(y_true: List, y_pred: List) -> float:
