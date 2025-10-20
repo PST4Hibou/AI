@@ -41,7 +41,7 @@ class TrainingPipeline:
 
         self.train_loader: DataLoader | None = None
         self.train_len = 0
-        self.val_loader: DataLoader | None = None
+        self.valid_loader: DataLoader | None = None
         self.val_len = 0
         self.test_loader: DataLoader | None = None
         self.test_len = 0
@@ -165,4 +165,7 @@ class TrainingPipeline:
         self._create_loaders(ds, self.model_item.collate_fn)
 
         self._train()
-        self._evaluate()
+        if self.evaluate_after_training:
+            self._evaluate()
+        else:
+            logging.info("Evaluation after training disabled. Skipping evaluation.")
