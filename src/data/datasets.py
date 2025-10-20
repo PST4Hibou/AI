@@ -15,10 +15,10 @@ def load_dataset(dataset_key: str):
     labels = ds[known_dataset.split].features["label"].names
     if known_dataset.split == "train":
         ds_split = ds["train"].train_test_split(
-            test_size=SETTINGS.TRAIN_TEST_SPLIT, seed=SETTINGS.SEED
+            test_size=SETTINGS.TRAIN_TEST_SPLIT, seed=SETTINGS.SEED, shuffle=False
         )
         test_and_valid = ds_split["test"].train_test_split(
-            test_size=SETTINGS.VALID_TEST_SPLIT, seed=SETTINGS.SEED
+            test_size=SETTINGS.VALID_TEST_SPLIT, seed=SETTINGS.SEED, shuffle=False
         )
 
         ds = DatasetDict(

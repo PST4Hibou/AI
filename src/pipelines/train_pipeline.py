@@ -63,7 +63,7 @@ class TrainingPipeline:
         self.valid_loader = DataLoader(
             ds["valid"],
             batch_size=SETTINGS.BATCH_SIZE,
-            shuffle=False,
+            shuffle=True,
             num_workers=SETTINGS.NUM_WORKERS,
             collate_fn=collate_fn,
         )
@@ -71,7 +71,7 @@ class TrainingPipeline:
         self.test_loader = DataLoader(
             ds["test"],
             batch_size=SETTINGS.BATCH_SIZE,
-            shuffle=False,
+            shuffle=True,
             num_workers=SETTINGS.NUM_WORKERS,
             collate_fn=collate_fn,
         )
