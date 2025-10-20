@@ -13,10 +13,10 @@ class Settings:
     NUM_WORKERS: int = 16
     EPOCHS: int = 10
     DEVICE: str = "cuda" if torch.cuda.is_available() else "cpu"
-    TRAIN_TEST_SPLIT: int = 0.3
-    VALID_TEST_SPLIT: int = 0.5
+    TRAIN_TEST_SPLIT: float = 0.05
+    VALID_TEST_SPLIT: float = 0.5
     MODEL_CHECKPOINT_PATH: str | None = None
-    LOG_LEVEL: str = "DEBUG"
+    LOG_LEVEL: str = "INFO"
 
 
 SETTINGS = Settings()
