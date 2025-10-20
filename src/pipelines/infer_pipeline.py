@@ -57,6 +57,9 @@ class InferPipeline:
         cm = confusion_matrix(y_true, y_pred)
         log_confusion_matrix(cm, self.labels)
 
+        accuracy = (cm.diagonal().sum() / cm.sum()) if cm.sum() > 0 else 0.0
+        logging.info(f"Accuracy: {accuracy:.4f}")
+
     def _load_model(self):
         logging.info(f"Loading checkpoint from {self.checkpoint_path}")
         try:
