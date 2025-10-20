@@ -5,7 +5,7 @@ from sklearn.metrics import confusion_matrix
 from torch import nn
 from tqdm import tqdm
 
-from src.data.datasets import load_dataset, validate_model_dataset_compatibility
+from src.data.datasets import load_dataset
 from datasets import DatasetDict
 
 import src.models.AudioCNN2d as AudioCNN2d
@@ -159,9 +159,6 @@ class TrainingPipeline:
         self.model_item = select_model(self.model_name).get_model_item(
             labels=self.labels, device=self.device
         )
-        
-        # Validate that model and dataset have compatible labels
-        validate_model_dataset_compatibility(self.labels, self.dataset_key)
         self.model_item.metric_acc.to(self.device)
 
         logging.debug("Loading loaders")

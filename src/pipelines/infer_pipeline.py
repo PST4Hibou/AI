@@ -2,7 +2,7 @@ import logging
 from torch.utils.data import DataLoader
 import torch
 
-from src.data.datasets import load_dataset, validate_model_dataset_compatibility
+from src.data.datasets import load_dataset
 from src.models import select_model
 from src.models.model_item import ModelItem
 from src.settings import SETTINGS
@@ -76,9 +76,6 @@ class InferPipeline:
         self.model_item = select_model(self.model_name).get_model_item(
             labels=self.labels, device=self.device
         )
-        
-        # Validate that model and dataset have compatible labels
-        validate_model_dataset_compatibility(self.labels, self.dataset_key)
 
         self._load_model()
         self._create_loaders(ds, self.model_item.collate_fn)
