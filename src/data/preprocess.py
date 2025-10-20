@@ -19,7 +19,7 @@ class Preprocessor:
         self,
         sequences: List[Callable],
     ):
-        pass
+        self.sequences = sequences
 
     @classmethod
     def mel_transform(
@@ -47,11 +47,18 @@ class Preprocessor:
         # When an item is a dict, only take the audio
         if isinstance(item, dict):
             audio = item["audio"]
-            data = torch.tensor(audio).float()
+ 
+            # Handle different types of audio data
+            try:
+                # Try to access as HuggingFace AudioDecoder (supports dict-like access)
+                data = torch.tensor(audio["array"]).float()
+            except (KeyError, TypeError):
+                # Fallback for numpy arrays, lists, or other direct formats
+                data = torch.tensor(audio).float()
 
         # Convert stereo to mono
         if data.ndim > 1:
-            waveform = data.mean(dim=0)
+            data = data.mean(dim=0)
 
         for sequence in self.sequences:
             data = sequence(data)

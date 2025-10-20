@@ -1,8 +1,10 @@
 import argparse
 
+from src.pipelines.infer_pipeline import InferPipeline
 from src.pipelines.train_pipeline import TrainingPipeline
 from src.arguments import args, parser
 import logging
+from src.models import models
 import src.logger
 
 
@@ -23,15 +25,22 @@ def train_model(_args):
         resume_from_checkpoint=_args.resume,
         evaluate_after_training=_args.evaluate,
     )
-    results = pipeline.run()
+    pipeline.run()
     logging.info("Training completed successfully!")
-    return results
 
 
 #
 #
 def run_inference(_args):
-    """Run inference on test datasets or custom files."""
+    logging.info(f"Starting inference pipeline with model: {args.model}")
+    pipeline = InferPipeline(
+        model_name=args.model,
+        dataset_key=_args.dataset,
+        checkpoint_path=args.checkpoint,
+        device=args.device,
+    )
+    pipeline.run()
+    logging.info("Inference completed successfully!")
 
 
 #     if args.files:
@@ -54,13 +63,12 @@ def run_inference(_args):
 #             device=args.device,
 #         )
 #         print("Inference completed successfully!")
-#
+# #
 #     return results
 #
 #
 def list_models(_args):
-    pass
-    """List available models."""
+    print(f"Available models: {', '.join(models.keys())}")
     # print_available_models()
 
 

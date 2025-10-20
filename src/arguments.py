@@ -34,21 +34,14 @@ train_parser.add_argument(
 
 # Inference arguments
 infer_parser = subparsers.add_parser("infer", help="Run inference")
+infer_parser.add_argument(
+    "--dataset",
+    default="drone_test",
+    help="HuggingFace dataset name",
+)
 infer_parser.add_argument("--files", nargs="+", help="Audio files to predict on")
 
 # Model listing arguments
 list_parser = subparsers.add_parser("list-models", help="List available models")
-
-# Model comparison arguments
-compare_parser = subparsers.add_parser("compare", help="Compare multiple models")
-compare_parser.add_argument(
-    "--models", nargs="+", help="Specific models to compare (default: all models)"
-)
-compare_parser.add_argument(
-    "--quick", action="store_true", help="Run quick comparison with training"
-)
-compare_parser.add_argument(
-    "--epochs", type=int, default=3, help="Number of epochs for quick comparison"
-)
 
 args = parser.parse_args()
