@@ -139,6 +139,16 @@
     "sampling_rate": {
       "dtype": "int64",
       "_type": "Value"
+    },
+    "mel_db": {
+      "feature": {
+        "feature": {
+          "dtype": "float32",
+          "_type": "Value"
+        },
+        "_type": "List"
+      },
+      "_type": "List"
     }
   },
   "homepage": "",
