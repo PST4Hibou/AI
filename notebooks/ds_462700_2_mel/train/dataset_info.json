@@ -1,0 +1,203 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "df_462700_2",
+  "dataset_size": 15278502700,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00000-of-00030.parquet": {
+      "num_bytes": 210359156,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00001-of-00030.parquet": {
+      "num_bytes": 222326737,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00002-of-00030.parquet": {
+      "num_bytes": 222465892,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00003-of-00030.parquet": {
+      "num_bytes": 215971691,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00004-of-00030.parquet": {
+      "num_bytes": 229068057,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00005-of-00030.parquet": {
+      "num_bytes": 234137379,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00006-of-00030.parquet": {
+      "num_bytes": 231079253,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00007-of-00030.parquet": {
+      "num_bytes": 211603252,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00008-of-00030.parquet": {
+      "num_bytes": 212831799,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00009-of-00030.parquet": {
+      "num_bytes": 200807820,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00010-of-00030.parquet": {
+      "num_bytes": 217027156,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00011-of-00030.parquet": {
+      "num_bytes": 234386602,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00012-of-00030.parquet": {
+      "num_bytes": 236488597,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00013-of-00030.parquet": {
+      "num_bytes": 241287942,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00014-of-00030.parquet": {
+      "num_bytes": 206979793,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00015-of-00030.parquet": {
+      "num_bytes": 207288176,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00016-of-00030.parquet": {
+      "num_bytes": 247977767,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00017-of-00030.parquet": {
+      "num_bytes": 248021501,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00018-of-00030.parquet": {
+      "num_bytes": 247844351,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00019-of-00030.parquet": {
+      "num_bytes": 248504827,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00020-of-00030.parquet": {
+      "num_bytes": 246076831,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00021-of-00030.parquet": {
+      "num_bytes": 242888894,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00022-of-00030.parquet": {
+      "num_bytes": 247538030,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00023-of-00030.parquet": {
+      "num_bytes": 248433062,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00024-of-00030.parquet": {
+      "num_bytes": 248378361,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00025-of-00030.parquet": {
+      "num_bytes": 248149611,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00026-of-00030.parquet": {
+      "num_bytes": 248199193,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00027-of-00030.parquet": {
+      "num_bytes": 248270978,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00028-of-00030.parquet": {
+      "num_bytes": 320960330,
+      "checksum": null
+    },
+    "hf://datasets/Usernameeeeee/df_462700_2@3513a23b30527320f2b61bda4ebc33f887271d44/data/train-00029-of-00030.parquet": {
+      "num_bytes": 437312791,
+      "checksum": null
+    }
+  },
+  "download_size": 7262665829,
+  "features": {
+    "label": {
+      "names": [
+        "other",
+        "drone"
+      ],
+      "_type": "ClassLabel"
+    },
+    "sampling_rate": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "mel_db": {
+      "feature": {
+        "feature": {
+          "dtype": "float32",
+          "_type": "Value"
+        },
+        "_type": "List"
+      },
+      "_type": "List"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 22541168529,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 15278502700,
+      "num_examples": 462701,
+      "shard_lengths": [
+        15424,
+        15424,
+        15424,
+        15424,
+        15424,
+        15424,
+        15424,
+        15424,
+        15424,
+        15424,
+        15424,
+        15423,
+        15423,
+        15423,
+        15423,
+        15423,
+        15423,
+        15423,
+        15423,
+        15423,
+        15423,
+        15423,
+        15423,
+        15423,
+        15423,
+        15423,
+        15423,
+        15423,
+        15423,
+        15423
+      ],
+      "dataset_name": "df_462700_2"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
