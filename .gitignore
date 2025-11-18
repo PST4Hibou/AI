@@ -1,3 +1,6 @@
 *.pyc
 /data/datasets/ds_462700/cache*
 data
+*.arrow
+notebooks/dataset/ds_2_noaugment_test.hf
+notebooks/dataset/ds_2_noaugment_big.hf/
