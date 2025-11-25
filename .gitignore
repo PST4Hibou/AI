@@ -4,3 +4,4 @@ data
 *.arrow
 notebooks/dataset/ds_2_noaugment_test.hf
 notebooks/dataset/ds_2_noaugment_big.hf/
+.idea
