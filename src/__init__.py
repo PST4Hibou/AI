@@ -1,3 +1,0 @@
-"""
-Acoustic Drone Detection Package
-"""
